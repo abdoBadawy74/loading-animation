@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #151515;
+}
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.percent {
+  color: #999;
+  font-size: 100px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.text {
+  position: absolute;
+  left: 160px;
+  color: #fdb5ca;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 21px;
+  display: none;
+}
+.text-blink {
+  animation: blink 0.7s ease-in-out 0.1s;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.progress-bar {
+  width: 406px;
+  height: 21px;
+  background-color: #111;
+  border-radius: 13px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.progress {
+  width: 200px;
+  height: 15px;
+  background-color: #f60d54;
+  border-radius: 13px;
+}
